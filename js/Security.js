@@ -73,20 +73,20 @@ class Security {
         //     }
         // });
 
-        // this.button3.mousePressed(() => {
-        //     if(system.authenticate(accessCode3,this.access3.value())){
-        //         this.button3.hide();
-        //         this.access3.hide();
-        //         score++;
-        //     }
-        // });
-
-         this.button3.mousePressed({
+         this.button3.mousePressed(() => {
              if(system.authenticate(accessCode3,this.access3.value())){
                  this.button3.hide();
                  this.access3.hide();
                  score++;
              }
          });
+
+        // this.button3.mousePressed({
+        //     if(system.authenticate(accessCode3,this.access3.value())){
+        //         this.button3.hide();
+        //         this.access3.hide();
+        //         score++;
+        //     }
+        // });
     }
 }
